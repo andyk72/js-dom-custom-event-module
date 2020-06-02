@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px;
+  background-color: #99aabb;
+  border-radius: 5px;
+}
