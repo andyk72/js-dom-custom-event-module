@@ -10,7 +10,13 @@ const $listener = document;
 // 1. Create a Custom Event
 const evt = eventWindsurfCreate({ spot: "Hyeres", knots: "25" });
 // 2. Put a listener in listening
-DomCustomEvent.listen(EVENT_WINDSURF, $listener);
+DomCustomEvent.listen(
+  EVENT_WINDSURF,
+  evt => {
+    console.log(evt);
+  },
+  $listener
+);
 // 3. Dispatch the event when you want
 DomCustomEvent.dispatch($dispatcher, evt);
 
