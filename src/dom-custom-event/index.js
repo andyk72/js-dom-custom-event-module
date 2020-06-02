@@ -25,12 +25,11 @@ const DomCustomEvent = {
   /**
    * Puts $listener HTMLElement in listening state for eventName event
    * @param {String} eventName
+   * @param {Function} eventHandler
    * @param {HTMLElement} $listener
    */
-  listen: (eventName, $listener = $EVENT_LISTENER_DEFAULT) => {
-    $listener.addEventListener(eventName, evt => {
-      console.log(evt);
-    });
+  listen: (eventName, eventHandler, $listener = $EVENT_LISTENER_DEFAULT) => {
+    $listener.addEventListener(eventName, eventHandler);
   },
 
   /**
