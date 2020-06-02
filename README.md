@@ -16,9 +16,9 @@ Module featuring a Custom Event manager
 @param {Function} eventHandler  
 @param {HTMLElement} \$listener optional
 
-**dispatch(\$dispatcher, evt)**
-@param {HTMLElement} \$dispatcher
-@param {CustomEvent} evt
+**dispatch(\$dispatcher, evt)**  
+@param {HTMLElement} \$dispatcher  
+@param {CustomEvent} evt  
 
 ## Usage
 
