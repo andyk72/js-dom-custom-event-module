@@ -11,8 +11,9 @@ Module featuring a Custom Event manager
  .bubbles {Boolean}  
  .cancelable {Boolean}
 
-**listen(eventName, \$listener)**  
+**listen(eventName, eventHandler, \$listener)**  
 @param {String} eventName  
+@param {Function} eventHandler  
 @param {HTMLElement} \$listener optional
 
 **dispatch(\$dispatcher, evt)**
